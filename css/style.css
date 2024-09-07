@@ -3,7 +3,7 @@
     --main-color: #0096a3;
     --secondary-color: #0b57a6;
   }
-  /* End Variables */
+/* End Variables */
 * {
     box-sizing: border-box;
 }
@@ -17,34 +17,25 @@
 body {
     font-family: 'MyCustomFont', sans-serif;
 }
-nav {
-    background-color: var(--main-color);
-    margin-bottom: 100px;
-}
-.btn-color {
-    background-color: var(--main-color);
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add bottom shadow */
-}
-.btn-color:hover {
-    background-color: var(--secondary-color);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Intensify the shadow on hover */
-}
 h1, h2, h3 {
     font-weight:bold;
     color: var(--main-color);
 }
-.intro h1 {
-    color: var(--main-color);
-    font-size: 50px;
+/* Start Navbar */
+nav {
+    background-color: var(--main-color);
+    margin-bottom: 100px;
 }
+/* End Navbar */
+/* Start intro */
 .extention-x { 
     padding-right: 25%;
     padding-bottom: 20px;
 }
-
+.intro h1 {
+    color: var(--main-color);
+    font-size: 40px;
+}
 .intro-info h2 {
     color: var(--secondary-color);
 }
@@ -67,29 +58,6 @@ h1, h2, h3 {
 .intro.ltr .intro-info::after {
     background: linear-gradient(90deg, var(--secondary-color) 0, rgba(255, 255, 255, 0) 100%);
 }
-.card-title {
-    color: var(--main-color);
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-.card-text {
-    font-size: 12px;
-    color: #707070;
-    margin-bottom: 20px;
-}
-.text-card{
-    background-color: #f8f9fa;
-    padding: 12px;
-    border-radius: 5px;
-    height: 100px;
-}
-.text-card h5 {
-    color: var(--secondary-color);
-}
-footer {
-    background-color: var(--main-color);
-    color: #fff;
-}
 @media (max-width: 767.98px) {
     .intro h1 {
         font-size: 2rem;
@@ -106,8 +74,47 @@ footer {
     .card-text {
         font-size: 0.9rem;
     }
-
 }
+/* End intro */
+/* Start cards */
+.card-title {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.card-text {
+    font-size: 12px;
+    color: #707070;
+    margin-bottom: 20px;
+}
+.btn-color {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add bottom shadow */
+}
+.btn-color:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Intensify the shadow on hover */
+}
+/* End cards */
+/* Start Journey Information */
+.text-card{
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 5px;
+    height: 100px;
+}
+.text-card h5 {
+    color: var(--secondary-color);
+}
+/* End Journey Information */
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
 
 
 

@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         element.textContent = element.getAttribute("data-ar");
       });
   
-      // Update the active language link style
-      switchToArabic.classList.add("fw-bold");
-      switchToEnglish.classList.remove("fw-bold");
+
     }
   
     // Function to switch to English
