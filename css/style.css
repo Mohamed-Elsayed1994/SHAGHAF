@@ -4,9 +4,13 @@
     --secondary-color: #0b57a6;
   }
 /* End Variables */
+/* Global Styles */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+/* Font Setup */
 @font-face {
     font-family: 'MyCustomFont';
     src: url('./ArbFonts/ArbFONTS-FFShamelFamily-SansOneBold.ttf') format('truetype'),
@@ -20,6 +24,19 @@ body {
 h1, h2, h3 {
     font-weight:bold;
     color: var(--main-color);
+}
+/* Logo Styling */
+.logo-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-lg {
+    width: 250px;
 }
 /* Start Navbar */
 nav {
