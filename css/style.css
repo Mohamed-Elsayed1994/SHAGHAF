@@ -2,9 +2,6 @@
 :root {
     --main-color: #0096a3;
     --secondary-color: #0b57a6;
-    --section-padding: 60px;
-    --section-background: #f6f6f6;
-    --main-duration: 0.5s;
   }
   /* End Variables */
 * {
@@ -12,14 +9,14 @@
 }
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('./ArbFonts/ArbFONTS-FFShamelFamily-SansOneBold.ttf') format('truetype'); /* Path to the font */
+    src: url('./ArbFonts/ArbFONTS-FFShamelFamily-SansOneBold.ttf') format('truetype'),
+         url('./ArbFonts/ArbFONTS-FFShamelFamily-SansOneBook.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 body {
     font-family: 'MyCustomFont', sans-serif;
 }
-
 nav {
     background-color: var(--main-color);
     margin-bottom: 100px;
@@ -31,13 +28,10 @@ nav {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add bottom shadow */
 }
-
 .btn-color:hover {
     background-color: var(--secondary-color);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Intensify the shadow on hover */
 }
-
-
 h1, h2, h3 {
     font-weight:bold;
     color: var(--main-color);
@@ -54,7 +48,6 @@ h1, h2, h3 {
 .intro-info h2 {
     color: var(--secondary-color);
 }
-
 .intro .intro-info {
     padding-bottom: 10px;
     position: relative;
@@ -70,13 +63,15 @@ h1, h2, h3 {
     background:var(--secondary-color);
     background: linear-gradient(270deg, var(--secondary-color) 0, rgba(255, 255, 255, 0) 100%);
 }
-
+/* Gradient for English (LTR) */
+.intro.ltr .intro-info::after {
+    background: linear-gradient(90deg, var(--secondary-color) 0, rgba(255, 255, 255, 0) 100%);
+}
 .card-title {
     color: var(--main-color);
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
-
 .card-text {
     font-size: 12px;
     color: #707070;
@@ -85,12 +80,12 @@ h1, h2, h3 {
 .text-card{
     background-color: #f8f9fa;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 5px;
+    height: 100px;
 }
 .text-card h5 {
-    color: var();
+    color: var(--secondary-color);
 }
-
 footer {
     background-color: var(--main-color);
     color: #fff;
